@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Registrazione</title>
+  <meta name="registrazione" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/registrazione.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Home</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <p class="navbar-text">Already have an account?</p>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <b>Login</b>
+              <span class="caret"></span>
+            </a>
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">Login via
+                    <div class="social-buttons1">
+                      <a href="#" class="btn1 btn1-fb1">
+                        <i class="fa1 fa1-facebook1"></i> Facebook</a>
+                      <a href="#" class="btn1 btn1-tw1">
+                        <i class="fa1 fa1-twitter1"></i> Twitter</a>
+                    </div>or
+                    <form class="form" role="form" method="post" action="/login">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword2">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        <div class="help-block text-right">
+                          <a href="">Forget the password ?</a>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" id="submit" class="btn btn-primary btn-block">Sign in</button>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> keep me logged-in
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!--Registrazione !-->
+
+  <div class="container">
+    <!-- REGISTRATION FORM -->
+    <div class="login">
+      <div class="container"></div>
+      <div class="col-lg-6 col-lg-offset-3">
+
+        <div class="login-box">
+          <h1>
+            <b>Registrazione</b>
+          </h1>
+
+          <form action="/registrazione" method="post" role="form">
+            <div class="col-lg-12">
+
+              <div class="form-group">
+                <input type="text" name="nickname" id="nickmail" class="form-control" placeholder="Nickname">
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+
+              <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+
+              <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-default">
+                <span>REGISTRATI</span>
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+        <!-- login-box -->
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+
+  <div class="footer1" id="fot1">
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+        <img src="./css/images/unict.png" id="img1" width=200px height=80px>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <h1 id="footerfont">Danilo Leocata</h1>
+        
+        <h2>CdS Informatica L-31
+          <br>X81000240 | danilo.leocata@gmail.com</h2>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <h1 id="footerfont">Antonino Giangreco</h1>
+        
+        <h2>CdS Informatica L-31
+          <br>X81000277 | giangrecouni@gmail.com</h2>
+      </div>
+
+
+
+
+
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script src="/css/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <script type="text/javascript">
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

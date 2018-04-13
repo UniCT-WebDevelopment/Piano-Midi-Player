@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/piano.css"> <link rel="stylesheet" href="/css/bootstrap.css">
+    
+        
+        <title>Piano Keyboard</title>
+    </head>
+<body class="body">
+        
+<nav class="navbar1 navbar-default navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+         
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown">Composizioni <span class="caret"></span></a>
+                      <ul class="dropdown-menu" id="droppiano" role="menu"> <% 
+                                                              for(var i=0;i<10;i++) {%>
+                          <tr>
+                              <td><li class="txtc">Composizione: <%=piano[i].nome%>
+                                  <br></li></td> 
+                              <td><li class="txtu">Utente: <%=piano[i].nickname%></li></td> 
+                                  <br>
+                          
+                          </tr>
+                          
+                                                                                              <% } %>
+                    
+                      </ul>
+  
+                 
+              
+                  </li>
+                <a class="navbar-brand" ><%=messages %> </a>
+            </ul>
+        </div>
+    </div>                     
+</nav>
+
+             
+<audio  id="audio1"  src= "../song/do.mp3" ></audio> <audio  id="audioW"  src="../song/W2.mp3"  ></audio> <audio  id="audioE"  src="../song/E.mp3"></audio> <audio  id="audioT"  src="../song/T.mp3"></audio>    
+<audio  id="audioY"  src="../song/Y.mp3"></audio> <audio  id="audioU"  src="../song/U.mp3"></audio> <audio  id="audio2"  src= "../song/re.mp3" ></audio> <audio  id="audio3"  src= "../song/mi.mp3" ></audio> 
+<audio  id="audio4"  src= "../song/fa.mp3"></audio> <audio  id="audio5"  src= "../song/sol.mp3"></audio> <audio  id="audio6"  src= "../song/la.mp3"></audio> <audio  id="audio7"  src= "../song/si.mp3" ></audio> <audio  id="audio8"  src= "../song/do1.mp3"></audio>
+            
+   <ul class="set" id="piano">
+        <li class="white" id="do"   data-note="c4"  onclick="play('audio1')"><h1 id="h1">A</h1></li>
+        <li class="black" id="bdo"  data-note="c3"  onclick="play('audioW')"><h2 id="h2">W</h2></li>
+        <li class="white" id="re"   data-note="d4"  onclick="play('audio2')"><h1 id="h1">S</h1></li>
+        <li class="black" id="bre"  data-note="d3"  onclick="play('audioE')"><h2 id="h2">E</h2> </li>
+        <li class="white" id="mi"   data-note="e4"  onclick="play('audio3')"><h1 id="h1">D</h1></li>
+        <li class="white" id="fa"   data-note="f4"  onclick="play('audio4')"><h1 id="h1">F</h1></li>
+        <li class="black" id="bmi"  data-note="g3"  onclick="play('audioT')"><h2 id="h2">T</h2></li>
+        <li class="white" id="sol"  data-note="g4"  onclick="play('audio5')"><h1 id="h1">G</h1></li>
+        <li class="black" id="bsol" data-note="a3"  onclick="play('audioY')"><h2 id="h2">Y</h2></li>
+        <li class="white" id="la"   data-note="a4"  onclick="play('audio6')"><h1 id="h1">H</h1></li>
+        <li class="black" id="bla"  data-note="b3"  onclick="play('audioU')"><h2 id="h2">U</h2></li>
+        <li class="white" id="si"   data-note="b4"  onclick="play('audio7')"><h1 id="h1">J</h1></li>
+        <li class="white" id="do1"  data-note="c5"  onclick="play('audio8')"><h1 id="h1">K</h1></li>
+        
+      </ul>
+    
+      <center class="center"> 
+        <textarea class="set1" name="nota1" id="nota" cols="45" rows="10"></textarea>
+          <h2 id="shiftText">Premi SHIFT per usare la tastiera</h2>
+          <input type="text" id="testo" class="form-nome" ><br><br><br>
+          <button type="submit" id="start" class="pulsante-start" onclick="recording_start()">Start</button>
+          <button type="submit" id="stop" class="pulsante-stop" onclick="recording_stop()">Stop</button><br><br><br>    
+        <form action="/download" method="get">
+          <button type="submit" id="download" class="pulsante-download">Download</button>
+        </form>
+        </center>
+    
+          <br><br><br><br>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+
+     <script src="/css/js/bootstrap.min.js"></script>
+     <script src="/css/js/piano.js"></script>
+</body>
+</html>

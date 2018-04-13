@@ -1,0 +1,213 @@
+* { box-sizing:border-box; }
+
+.body { 
+	margin:0; background-image: url("../css/images/B2.jpg");
+	background-position: 100% 100%; 
+}
+
+.set{
+	margin-top: 5%;
+}
+
+/*margin-10px in un altro elemento*/
+
+#piano {
+	margin-top: 4%;
+	height:20.875em; 
+	width:40em;
+    margin:5em auto;
+    padding:3em 0 0 3em;
+    position:relative; 
+    border:1px solid #160801;
+    border-radius:1em; 
+	box-shadow:0 0 50px rgba(0,0,0,0.5) inset, 0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5);
+	background: rgba(183, 176, 176,0.5);
+}
+
+/*Cambiare questi li per metterli solo dentro il container del pianoforte perchè altriemtni fotte tutti gli altri css*/
+
+li { 
+	margin:0;
+	padding:0; 
+	list-style:none; 
+	position:relative; 
+	float:left;
+	color: #2b3039;
+	cursor: pointer; 
+}
+
+li:hover{
+	color: teal;
+}
+
+.white:hover{
+	background-color: rgb(220, 214, 237);
+	border-top:1px solid #777;
+	border-left:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	border-radius:0 0 5px 5px;
+}
+
+ul .white {
+	height:16em; width:4em; z-index:1;
+	border-left:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	border-radius:0 0 0px 0px;
+	box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset, 0 0 5px #ccc inset, 0 0 3px rgba(0,0,0,0.2);
+	background: rgb(237, 237, 237);
+	border-width: 0.2em;
+}
+
+ul .white:active {
+	border-top:1px solid #777;
+	border-left:1px solid #999;
+	border-bottom:1px solid #999;
+	box-shadow:2px 0 3px rgba(0,0,0,0.1) inset, -5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+	background: linear-gradient(top, #fff 0%,#e9e9e9 100%);
+}
+
+.black {
+	height:8em; width:2em; margin:0 0 0 -1em; z-index:2;
+	border:1px solid #000;
+	border-radius:0 0 3px 3px;
+	box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset, 0 -5px 2px 3px rgba(0,0,0,0.6) inset, 0 2px 4px rgba(0,0,0,0.5);
+	background:linear-gradient(45deg, #222 0%,#555 100%);
+}
+
+.black:hover{	
+	background-color: rgb(220, 214, 237);
+	border-top:1px solid #777;
+	border-left:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	border-radius:0 0 5px 5px;}
+
+ul .black:hover{	border-top:1px solid #777;
+	border-left:1px solid #999;
+	border-bottom:1px solid #999;
+	box-shadow:2px 0 3px rgba(0,0,0,0.1) inset, -5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+	background: linear-gradient(top, #fff 0%,#e9e9e9 100%);}
+	
+
+	/*Si parla qui del testo*/
+.black:active {
+	box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset, 0 -2px 2px 3px rgba(0,0,0,0.6) inset, 0 1px 2px rgba(0,0,0,0.5);
+	background:linear-gradient(left, #444 0%,#222 100%);
+}
+
+.black + .white{
+	margin-left: -12px;
+}
+
+.black + .black{
+	margin-left: -22px;
+}
+
+.white + .white{
+	margin-left: 1px;
+}
+
+.a,.g,.f,.d,.c { margin:0 0 0 -1em;  }
+
+ul li:first-child { border-radius:5px 0 5px 5px; }
+ul li:last-child { border-radius:0 5px 5px 5px; }
+
+.set1 {
+	height:5.875em; 
+	width:45em;
+	margin:5em auto;
+	position:relative; 
+	border:1px solid #160801;
+	border-radius:1em; 
+	box-shadow:0 0 50px rgba(0,0,0,0.5) inset, 0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5); 
+	
+}
+
+.pulsante-start{
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 10px 20px;
+	border: solid 1px #00a305;
+	background: #03cd00;
+	
+}
+
+
+.pulsante-download{
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 10px 20px;
+	border: solid 1px #0e00a3;
+	background: #0011cd;
+	display: none;
+	
+}
+
+.pulsante-stop{
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 10px 20px;
+	border: solid 1px #a30000;
+	background: #cd0000;
+	display: none;
+}
+
+
+.form-nome{
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 10px 20px;
+	border: solid 1px #9b9b9b;
+	background: #3c3c3c;
+}
+
+#h1{
+	padding-left: 30%;
+	padding-top: 162%;
+	size: 12px;
+}
+#h2{
+	padding-left: 10%;
+}
+
+.txtc{
+	color: #857c7c;
+}
+
+.txtu{
+	color: #710606;
+	
+}
+
+#droppiano{
+	width: 188x;
+	margin-left: -14px;
+}
+
+.txtc:hover{
+	color: yellow;
+}
+
+
+.txtu:hover{
+	color: pink;
+}
+
+#shiftText {
+	color: rgba(255,255,255,0.8)
+}

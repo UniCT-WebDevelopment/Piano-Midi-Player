@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  
+  <link rel="stylesheet" href="/css/bootstrap.css">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body ng-app=b ackgroundImage>
+
+
+  <nav class="navbar navbar-default navbar-inverse" role="navigation">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/piano">Piano</a>
+
+
+
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle navbar-brand" data-toggle="dropdown">Ultime 10
+              <span class="caret"></span>
+            </a>
+
+            <ul class="dropdown-menu" role="menu">
+              <% for(var i=0;i<home.length;i++) {%>
+                <tr>
+                  <td>
+                    <li class="txtc">
+                      Composizione: <%=home[i].nome%>
+                    </li>
+                    <br>
+                  </td>
+                  <li class="txtu">
+                    Utente: <%=home[i].nickname%>
+                  </li>
+
+                </tr>
+
+                <% } %>
+
+            </ul>
+      </div>
+
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li> </li>
+        <li>
+          <p class="navbar-text">
+            <% if (message.length >0) { %>
+              <div class="alert alert-danger" id="alert">
+                <%= message %>
+              </div>
+              <% } %>
+          </p>
+        </li>
+
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <b>Login</b>
+            <span class="caret"></span>
+          </a>
+          <ul id="login-dp" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  Login via
+                  <div class="social-buttons">
+                    <a href="#" class="btn btn-fb">
+                      <i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="#" class="btn btn-tw">
+                      <i class="fa fa-twitter"></i> Twitter</a>
+                  </div>
+                  or
+                  <form class="form" role="form" method="post" action="/login">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputPassword2">Password</label>
+                      <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                      <div class="help-block text-right">
+                        <a href="">Forget the password ?</a>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> keep me logged-in
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div class="bottom text-center">
+                  New here ?
+                  <a href="/registrazione">
+                    <b>Join Us</b>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+   
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="../css/images/piano1.jpg">
+        <div class="header-text hidden-xs">
+          <div class="col-md-12 text-center">
+            <h2>
+              <span>Welcome to
+                <strong>PIANO MIDI</strong>
+              </span>
+            </h2>
+            <br>
+            <h3>
+              <span>Inizia subito a comporre la tua melodia.</span>
+            </h3>
+            <br>
+            <br>
+            <br>
+            <div class="">
+              <a class="registrazione" href="/registrazione">Register</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="footer" id="fot">
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <img src="./css/images/unict.png" id="img" width=200px height=80px>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <h1 id="footerfont">Danilo Leocata</h1>
+            <br>
+            <h2>CdS Informatica L-31
+              <br>X81000240 | danilo.leocata@gmail.com</h2>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <h1 id="footerfont">Antonino Giangreco</h1>
+            <br>
+            <h2>CdS Informatica L-31
+              <br>X81000277 | giangrecouni@gmail.com</h2>
+          </div>
+
+
+        </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <script src="/css/js/bootstrap.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+      <script type="text/javascript">
+
+
+
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

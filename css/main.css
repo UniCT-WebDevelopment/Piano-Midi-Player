@@ -1,0 +1,177 @@
+body{
+  background-image: url("../css/images/B2.jpg");
+	background-position: 100% 100%; 
+  background-repeat: no-repeat;
+  background-position: 100% 66%;
+  padding:2%;
+  background-color: rgb(116, 116, 116);
+
+}
+
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+  font-size:12px    
+}
+#login-dp .bottom{
+  background-color:rgba(255,255,255,.8);
+  border-top:1px solid #ddd;
+  clear:both;
+  padding:14px;
+}
+#login-dp .social-buttons{
+  margin:12px 0    
+}
+#login-dp .social-buttons a{
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+}
+.btn-fb:hover{
+  color: #fff;
+  background-color:#496ebc 
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+}
+.btn-tw:hover{
+  color: #fff;
+  background-color:#59b5fa;
+}
+@media(max-width:768px){
+  #login-dp{
+      background-color: inherit;
+      color: #fff;
+  }
+  #login-dp .bottom{
+      background-color: inherit;
+      border-top:0 none;
+  }
+}
+
+#fot{
+  width: 100%;
+  float: left;
+  margin-top: 5%;
+  padding-bottom: 70px;
+  margin-bottom: 2%;
+  
+  text-align:center;
+  font-family: sans-serif;
+  background: #212121;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid transparent;      /*perché non mi fa il bordino come la navbar?*/
+}
+
+.footer h2{
+  padding: 16px;
+  color: #ddd;
+}
+
+.footer p{
+  color: #777;
+}
+
+.footer a:hover{
+  color: #f04545;
+}
+.jumbotron{
+  margin-top: 5%;
+
+}
+
+.header-text {
+  position: absolute;
+  top: 20%;
+  left: 1.8%;
+  right: auto;
+  width: 96.66666666666666%;
+  color: #fff;
+}
+
+.header-text h2 {
+  font-size: 40px;
+}
+
+.header-text h2 span {
+  background-color: #2980b9;
+padding: 10px;
+}
+
+.header-text h3 span {
+background-color: #000;
+padding: 15px;
+}
+.btn-min-block {
+  min-width: 170px;
+  line-height: 26px;
+}
+
+.btn-theme {
+  color: #fff;
+  background-color: blue;
+  border: 2px solid #fff;
+  margin-right: 15px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+
+}
+
+.registrazione{
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 25px 200px;
+	border: solid 1px #2d2e34;
+  background: #0064bc;
+  
+}
+
+#login{
+  float:left;
+}
+
+#img{
+  padding-top: 43px;
+    width: 335px;
+    height: 191px;
+}
+
+#footerfont{
+  color: white;
+}
+
+.txtc{
+	color: #857c7c;
+}
+
+.txtu{
+	color: #710606;
+	
+}
+
+.txtc:hover{
+	color: yellow;
+}
+
+
+.txtu:hover{
+	color: pink;
+}
