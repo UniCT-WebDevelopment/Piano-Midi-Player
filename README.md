@@ -1,5 +1,3 @@
-# Piano-midi-Player
-
 ## Introduction
 
 Piano midi is a service that allows you to compose music in real time and also allows you to save your own composition in .midi format. The js-midgen library is used to generate files in MIDI format in Javascript. It also uses mysql to create a database containing the list of users and the list of each
@@ -45,8 +43,7 @@ Aftert that you can use PIANO MIDI running "npm start" at project folder. After 
 
 ##Credit
 
-Antonino Giangreco - @gitHub: Anto-9393
 Danilo Leocata - @gitHub: khalld
- 
+Antonino Giangreco - @gitHub: 
 
 University of Catania - Department of computer science
