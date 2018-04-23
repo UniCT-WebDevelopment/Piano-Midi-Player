@@ -36,22 +36,6 @@ var path = require('path')
     
   });
 
-
-/*router.get('/registrazione', function(req, res, next){
-  connection.query('SELECT * FROM utenti',(err,result)=>{
-    console.log(result);
-    res.render('registrazione',{
-      utenti:result
-
-    });
-  });
-
-});
-
-MIDI PLAYER JS
-*/
-
-
 router.get('/registrazione', function(req, res, next){
  
   res.render('registrazione')
