@@ -43,7 +43,8 @@ Aftert that you can use PIANO MIDI running "npm start" at project folder. After 
 
 ##Credit
 
+Antonino Giangreco - @gitHub: Anto-9393
 Danilo Leocata - @gitHub: khalld
-Antonino Giangreco - @gitHub: 
+
 
 University of Catania - Department of computer science
