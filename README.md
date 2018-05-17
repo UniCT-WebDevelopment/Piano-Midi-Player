@@ -18,7 +18,7 @@ Alfter that, you need to install mysql and create a database called 'music_db' w
 table canzoni:
 
 +----------------+--------------+------+-----+---------+----------------+<br>
-| Field          | Type         | Null | Key | Default | Extra          |<br>
+<p>| Field          | Type         | Null | Key | Default | Extra          |<br>
 +----------------+--------------+------+-----+---------+----------------+<br>
 | ID             | int(11)      | NO   | PRI | NULL    | auto_increment |<br>
 | ID_PROP        | int(11)      | YES  | MUL | NULL    |                |<br>
@@ -30,13 +30,13 @@ table canzoni:
 table utenti:
 
 +----------+--------------+------+-----+---------+----------------+<br>
-| Field    | Type         | Null | Key | Default | Extra          |
-+----------+--------------+------+-----+---------+----------------+
-| ID       | int(11)      | NO   | PRI | NULL    | auto_increment |
-| email    | varchar(255) | YES  |     | NULL    |                |
-| nickname | varchar(255) | YES  |     | NULL    |                |
-| password | varchar(255) | YES  |     | NULL    |                |
-+----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |<br>
++----------+--------------+------+-----+---------+----------------+<br>
+| ID       | int(11)      | NO   | PRI | NULL    | auto_increment |<br>
+| email    | varchar(255) | YES  |     | NULL    |                |<br>
+| nickname | varchar(255) | YES  |     | NULL    |                |<br>
+| password | varchar(255) | YES  |     | NULL    |                |<br>
++----------+--------------+------+-----+---------+----------------+<br>
 
 
 Aftert that you can use PIANO MIDI running "npm start" at project folder. After completing all the following steps open your browser and go to http: // localhost: 3000 /
