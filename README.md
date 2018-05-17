@@ -17,7 +17,7 @@ Alfter that, you need to install mysql and create a database called 'music_db' w
 
 table canzoni:
 
-+----------------+--------------+------+-----+---------+----------------+
++----------------+--------------+------+-----+---------+----------------+<br>
 | Field          | Type         | Null | Key | Default | Extra          |
 +----------------+--------------+------+-----+---------+----------------+
 | ID             | int(11)      | NO   | PRI | NULL    | auto_increment |
