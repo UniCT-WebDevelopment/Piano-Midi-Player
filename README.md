@@ -18,18 +18,18 @@ Alfter that, you need to install mysql and create a database called 'music_db' w
 table canzoni:
 
 +----------------+--------------+------+-----+---------+----------------+<br>
-| Field          | Type         | Null | Key | Default | Extra          |
-+----------------+--------------+------+-----+---------+----------------+
-| ID             | int(11)      | NO   | PRI | NULL    | auto_increment |
-| ID_PROP        | int(11)      | YES  | MUL | NULL    |                |
-| nome           | varchar(255) | YES  |     | NULL    |                |
-| data_creazione | date         | YES  |     | NULL    |                |
-| path           | varchar(255) | YES  |     | NULL    |                |
-+----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |<br>
++----------------+--------------+------+-----+---------+----------------+<br>
+| ID             | int(11)      | NO   | PRI | NULL    | auto_increment |<br>
+| ID_PROP        | int(11)      | YES  | MUL | NULL    |                |<br>
+| nome           | varchar(255) | YES  |     | NULL    |                |<br>
+| data_creazione | date         | YES  |     | NULL    |                |<br>
+| path           | varchar(255) | YES  |     | NULL    |                |<br>
++----------------+--------------+------+-----+---------+----------------+<br>
 
 table utenti:
 
-+----------+--------------+------+-----+---------+----------------+
++----------+--------------+------+-----+---------+----------------+<br>
 | Field    | Type         | Null | Key | Default | Extra          |
 +----------+--------------+------+-----+---------+----------------+
 | ID       | int(11)      | NO   | PRI | NULL    | auto_increment |
