@@ -24,7 +24,7 @@ Canzoni
 | data_creazione | date         | YES  |     |                |
 | path           | varchar(255) | YES  |     |                |
 
-table utenti:
+Utenti
 
 | Field    | Type         | Null | Key | Extra          |
 |----------|--------------|------|-----|----------------|
